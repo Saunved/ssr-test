@@ -8,13 +8,13 @@
 <script>
 export default {
   async asyncData({$axios}){
-    if(process.server){
+    /* Activating this condition prevents the data from loading on route change! */
+    // if(process.server){
       const res = await $axios.get(`https://jsonplaceholder.typicode.com/posts`)
       return {
         posts: res.data
       }
-    }
-
+    // }
   }
 }
 </script>
