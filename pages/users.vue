@@ -8,12 +8,12 @@
 <script>
 export default {
   async asyncData({$axios}){
-    if(process.server){
+    // if(process.server){
         const res = await $axios.get(`https://jsonplaceholder.typicode.com/users`)
         return {
         users: res.data
         }
-    }
+    // }
   }
 }
 </script>
