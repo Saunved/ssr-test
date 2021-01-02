@@ -1,0 +1,18 @@
+export default {
+  brand: 'La Marca',
+  doToday: '¿Qué quieres hacer hoy?',
+  alsoKnown: 'También conocido como',
+  betterQuality: 'Lo sentimos, no se pudo cargar una imagen de mejor calidad',
+  about: 'Acerca de',
+  priceList: 'Lista de Precios',
+  menuCard: 'Menú / Carta de Bebidas',
+  times: 'Horarios',
+  publicHoliday: 'Vacaciones Públicas',
+  season: 'Temporada',
+  today: 'Hoy',
+  bookTable: 'Reserve su Mesa',
+  cancel: 'Cancelar',
+  ok: 'Ok',
+  sendRequest: 'Enviar Solicitud',
+  checkAvailable: 'Verificar Disponibilidad',
+}

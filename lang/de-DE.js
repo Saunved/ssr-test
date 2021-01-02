@@ -1,0 +1,20 @@
+export default {
+  brand: 'Die Marke',
+  doToday: 'Was willst du heute machen?',
+  alsoKnown: 'Auch bekannt als',
+  betterQuality:
+    'Entschuldigung, eine bessere Qualität ist gerade nicht verfügbar',
+  about: 'Über',
+  priceList: 'Preisliste',
+  times: 'Öffnungszeiten',
+  menuCard: 'Speise / Getränkekarte',
+  publicHoliday: 'Feiertage',
+  season: 'Saison',
+  today: 'Heute',
+  bookTable: 'Reserviere deinen Tisch',
+  cancel: 'Löschen',
+  ok: 'Ok',
+  sendRequest: 'Sende Anfrage',
+  checkAvailable: 'Prüfe Verfügbarkeit',
+  request: 'Anfrage',
+}

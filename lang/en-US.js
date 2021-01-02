@@ -1,0 +1,18 @@
+export default {
+  brand: 'The Brand',
+  doToday: 'What do you want to do today?',
+  alsoKnown: 'Also known as',
+  betterQuality: 'Sorry, a better quality image could not be loaded',
+  about: 'About',
+  priceList: 'Show price list',
+  menuCard: 'Menu / Beverages list',
+  times: 'Opening times',
+  publicHoliday: 'Public Holiday',
+  season: 'Season',
+  today: 'Today',
+  bookTable: 'Book your table',
+  cancel: 'Cancel',
+  ok: 'Ok',
+  sendRequest: 'Send request',
+  checkAvailable: 'Check availability',
+}

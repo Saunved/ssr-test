@@ -30,11 +30,55 @@ export default {
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/axios
+    '@nuxtjs/proxy',
     '@nuxtjs/axios',
+    [
+      'nuxt-i18n',
+      {
+        locales: [
+          {
+            name: 'Deutsch',
+            code: 'de',
+            iso: 'de-DE',
+            file: 'de-DE.js',
+          },
+          {
+            name: 'English',
+            code: 'en',
+            iso: 'en-US',
+            file: 'en-US.js',
+          },
+          {
+            name: 'Español',
+            code: 'es',
+            iso: 'es-ES',
+            file: 'es-ES.js',
+          },
+        ],
+        vueI18nLoader: true,
+        lazy: true,
+        langDir: 'lang/',
+        defaultLocale: 'en',
+        detectBrowserLanguage: {
+          useCookie: true,
+          cookieKey: 'i18n_redirected',
+          alwaysRedirect: true,
+          fallbackLocale: 'en',
+        },
+      },
+    ],    
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
-  axios: {},
+  axios: {
+    baseUrl: '/',
+    proxy: true,
+  },
+  proxy: {
+    '/api/': {
+      target: 'https://jsonplaceholder.typicode.com/posts' }
+  },
+
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
